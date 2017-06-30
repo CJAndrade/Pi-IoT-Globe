@@ -1,0 +1,9 @@
+#!/bin/sh
+[Unit]
+Description=Pi Globe Service
+[Service]
+ExecStart=/usr/bin/python /home/pi/Pi-IoT-Globe/pigloble.py
+StandardOutput=null
+[Install]
+WantedBy=basic.target
+Alias=piglobe.service
